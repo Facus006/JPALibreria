@@ -1,9 +1,6 @@
 package jpalibreria;
 
-
-import Servicio.ServicioEditorial;
-
-
+import Interfaz.PantallaMenu;
 
 public class JPALibreria {
 
@@ -30,9 +27,15 @@ public class JPALibreria {
        // System.out.println(SL.buscarLibrosPorAutor("CARLONCHO"));
         //System.out.println(SL.buscarLibrosPoreEditorial("Mundo Libron"));
         
-        ServicioEditorial Menu = new ServicioEditorial();
-        Menu.menu();
+        //ServicioMenu Menu = new ServicioMenu();
+        //Menu.menu();
+        
+        PantallaMenu pan = new PantallaMenu();
+        pan.setVisible(true);
+        pan.setLocationRelativeTo(null);
+       
         
     }
+    
     
 }
